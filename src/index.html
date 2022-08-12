@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="font-helvetica">
+  <!-- Navbar Start -->
+  <header class="bg-[#F1F3FF]">
+    <div class="relative z-20 px-[70px] container mx-auto py-3">
+      <nav class="md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+          <span class="bg-[#0D28A6] w-[100px] h-[34px]"> </span>
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <ul
+          class="md:flex bg-[#F1F3FF] md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-500">Our Services</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-500">Why Us</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-500">Testimonial</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-500">FAQ</a>
+          </li>
+          <button class="bg-[#5CB85F] text-white font-[Poppins] duration-500 px-6 py-2 mx-4 rounded">
+            Register
+          </button>
+          <h2 class=""></h2>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </header>
+  <!-- Navbar End -->
+
+  <!-- Section Banner Start -->
+  <div class="bg-[#F1F3FF] relative">
+    <div class="container px-[70px] mx-auto content-center">
+      <section class="font-sans h-[500px] flex items-stretch">
+        <div class="self-center">
+          <h1 class="font-bold text-3xl w-[568px]">
+            Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)
+          </h1>
+          <p class="w-[468px] mt-4">
+            Selamat datang di Binar Car Rental. Kami menyediakan mobil
+            kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+            kebutuhanmu untuk sewa mobil selama 24 jam.
+          </p>
+          <div class="mt-6">
+            <a href="#" class="bg-[#5CB85F] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Mulai Sewa
+              Mobil</a>
+          </div>
+        </div>
+        <div>
+          <img class="absolute right-0 bottom-0 z-10" src="./img/img_car.png" alt="" />
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- Section Banner End -->
+
+  <!-- Section Best Car Start -->
+  <div class="container px-[70px] mx-auto mt-28 flex justify-center">
+    <div class="w-[1100px] flex justify-around">
+      <div>
+        <img src="./img/img_service.png" alt="" />
+      </div>
+      <div class="w-[468px]">
+        <h2 class="font-bold text-xl">
+          Best Car Rental for any kind of trip in (Lokasimu)!
+        </h2>
+        <p class="mt-4 text-sm">
+          Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga
+          lebih murah dibandingkan yang lain, kondisi mobil baru, serta
+          kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding,
+          meeting, dll.
+        </p>
+        <div class="mt-4">
+          <div class="flex">
+            <img src="./img/fi_check.png" alt="" />
+            <p class="ml-4 text-sm">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div class="flex">
+            <img src="./img/fi_check.png" alt="" />
+            <p class="ml-4 text-sm">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div class="flex">
+            <img src="./img/fi_check.png" alt="" />
+            <p class="ml-4 text-sm">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div class="flex">
+            <img src="./img/fi_check.png" alt="" />
+            <p class="ml-4 text-sm">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div class="flex">
+            <img src="./img/fi_check.png" alt="" />
+            <p class="ml-4 text-sm">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section Best Car End -->
+
+  <!-- Section Why Us? Start -->
+  <section class="container px-[70px] mx-auto mt-28 h-[308px]">
+    <div class="">
+      <h2 class="font-bold text-xl">Why Us?</h2>
+      <p class="mt-2">Mengapa harus pilih Binar Car Rental?</p>
+    </div>
+    <div class="grid grid-cols-4 gap-5">
+      <div class="mt-14 p-6 rounded-lg border-solid border-2">
+        <img src="./img/icon_complete.png" alt="" />
+        <h2 class="font-bold text-base mt-4">Mobil Lengkap</h2>
+        <p class="mt-4 text-sm">
+          Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
+          terawat
+        </p>
+      </div>
+      <div class="mt-14 p-6 rounded-lg border-solid border-2">
+        <img src="./img/icon_price.png" alt="" />
+        <h2 class="font-bold text-base mt-4">Harga Murah</h2>
+        <p class="mt-4 text-sm">
+          Harga murah dan bersaing, bisa bandingkan harga kami dengan rental
+          mobil lain
+        </p>
+      </div>
+      <div class="mt-14 p-6 rounded-lg border-solid border-2">
+        <img src="./img/icon_24hrs.png" alt="" />
+        <h2 class="font-bold text-base mt-4">Layanan 24 Jam</h2>
+        <p class="mt-4 text-sm">
+          Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga
+          tersedia di akhir minggu
+        </p>
+      </div>
+      <div class="mt-14 p-6 rounded-lg border-solid border-2">
+        <img src="./img/icon_professional.png" alt="" />
+        <h2 class="font-bold text-base mt-4">Sopir Profesional</h2>
+        <p class="mt-4 text-sm">
+          Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat
+          waktu
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimony Start -->
+  <div class="flex justify-center mt-28">
+    <div>
+      <h2 class="font-bold text-xl text-center">Testimonial</h2>
+      <p class="mt-2 text-center">
+        Berbagai review positif dari para pelanggan kami
+      </p>
+    </div>
+  </div>
+  <div class="owl-carousel owl-theme flex justify-between mt-12">
+    <div class="item">
+      <div class="bg-[#F1F3FF] w-[430px] flex justify-between items-center rounded-lg p-[20px] h-[270px]">
+        <div class="flex">
+          <img class="w-[50px] h-[50px] object-cover" src="./img/img_photo.png" alt="" />
+        </div>
+        <div>
+          <div class="flex justify-between w-[100px]">
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+          </div>
+          <p class="text-xs w-[320px] mt-2">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod”
+          </p>
+          <p class="text-xs font-semibold mt-2">John Dee 32, Bromo</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bg-[#F1F3FF] w-[430px] flex justify-between items-center rounded-lg p-[20px] h-[270px]">
+        <div class="flex">
+          <img class="w-[50px] h-[50px] object-cover" src="./img/img_photo (1).png" alt="" />
+        </div>
+        <div>
+          <div class="flex justify-between w-[100px]">
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+          </div>
+          <p class="text-xs w-[320px] mt-2">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod”
+          </p>
+          <p class="text-xs font-semibold mt-2">John Dee 32, Bromo</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bg-[#F1F3FF] w-[430px] flex justify-between items-center rounded-lg p-[20px] h-[270px]">
+        <div class="flex">
+          <img class="w-[50px] h-[50px] object-cover" src="./img/img_photo.png" alt="" />
+        </div>
+        <div>
+          <div class="flex justify-between w-[100px]">
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+          </div>
+          <p class="text-xs w-[320px] mt-2">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod”
+          </p>
+          <p class="text-xs font-semibold mt-2">John Dee 32, Bromo</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bg-[#F1F3FF] w-[430px] flex justify-between items-center rounded-lg p-[20px] h-[270px]">
+        <div class="flex">
+          <img class="w-[50px] h-[50px] object-cover" src="./img/img_photo (1).png" alt="" />
+        </div>
+        <div>
+          <div class="flex justify-between w-[100px]">
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+          </div>
+          <p class="text-xs w-[320px] mt-2">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod”
+          </p>
+          <p class="text-xs font-semibold mt-2">John Dee 32, Bromo</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bg-[#F1F3FF] w-[430px] flex justify-between items-center rounded-lg p-[20px] h-[270px]">
+        <div class="flex">
+          <img class="w-[50px] h-[50px] object-cover" src="./img/img_photo.png" alt="" />
+        </div>
+        <div>
+          <div class="flex justify-between w-[100px]">
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+          </div>
+          <p class="text-xs w-[320px] mt-2">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod”
+          </p>
+          <p class="text-xs font-semibold mt-2">John Dee 32, Bromo</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="bg-[#F1F3FF] w-[430px] flex justify-between items-center rounded-lg p-[20px] h-[270px]">
+        <div class="flex">
+          <img class="w-[50px] h-[50px] object-cover" src="./img/img_photo (1).png" alt="" />
+        </div>
+        <div>
+          <div class="flex justify-between w-[100px]">
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+            <img src="./img/Star 1.png" alt="" />
+          </div>
+          <p class="text-xs w-[320px] mt-2">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod”
+          </p>
+          <p class="text-xs font-semibold mt-2">John Dee 32, Bromo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimony End -->
+
+  <!-- CTA Banner Start -->
+  <div class="container px-[70px] mx-auto mt-28 h-[308px]">
+    <div class="flex justify-center bg-[#0D28A6] py-[60px] rounded-lg">
+      <div>
+        <h1 class="text-4xl font-bold text-white">
+          Sewa Mobil di (Lokasimu) Sekarang
+        </h1>
+        <p class="text-center w-[468px] mx-auto mt-8 text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="flex justify-center">
+          <button class="bg-[#5CB85F] text-white font-[Poppins] mt-12 duration-500 px-6 py-2 mx-4 rounded">
+            Mulai Sewa Mobil
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CTA Banner End -->
+
+  <!-- FAQ Start -->
+  <div class="container px-[70px] mx-auto mt-28 h-[308px]">
+    <div class="flex justify-between">
+      <div>
+        <h2 class="font-bold text-xl">Frequently Asked Question</h2>
+        <p class="mt-2 text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </p>
+      </div>
+      <div class="w-[668px]">
+        <section>
+          <details class="mt-2">
+            <summary class="font-normal rounded-md py-2 px-4 w-full border-solid border-2">
+              How Long is this site live?
+            </summary>
+            <p class="py-2 px-4 border-solid border-2 rounded-lg mt-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam. Dolore
+              ex aute deserunt esse ipsum elit aliqua. Aute quis minim velit
+              nostrud pariatur culpa magna in aute.
+            </p>
+          </details>
+          <details class="mt-2">
+            <summary class="font-normal rounded-md py-2 px-4 w-full border-solid border-2">
+              Berapa hari minimal sewa mobil lepas kunci?
+            </summary>
+            <p class="py-2 px-4 border-solid border-2 rounded-lg mt-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam. Dolore
+              ex aute deserunt esse ipsum elit aliqua. Aute quis minim velit
+              nostrud pariatur culpa magna in aute.
+              </span>
+          </details>
+          <details class="mt-2">
+            <summary class="font-normal rounded-md py-2 px-4 w-full border-solid border-2">
+              Berapa hari sebelumnya sabaiknya booking sewa mobil?
+            </summary>
+            <p class="py-2 px-4 border-solid border-2 rounded-lg mt-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam. Dolore
+              ex aute deserunt esse ipsum elit aliqua. Aute quis minim velit
+              nostrud pariatur culpa magna in aute.
+              </span>
+          </details>
+          <details class="mt-2">
+            <summary class="font-normal rounded-md py-2 px-4 w-full border-solid border-2">
+              Apakah Ada biaya antar-jemput?
+            </summary>
+            <p class="py-2 px-4 border-solid border-2 rounded-lg mt-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam. Dolore
+              ex aute deserunt esse ipsum elit aliqua. Aute quis minim velit
+              nostrud pariatur culpa magna in aute.
+              </span>
+          </details>
+          <details class="mt-2">
+            <summary class="font-normal rounded-md py-2 px-4 w-full border-solid border-2">
+              Bagaimana jika terjadi kecelakaan
+            </summary>
+            <p class="py-2 px-4 border-solid border-2 rounded-lg mt-2">
+              Laboris qui labore cillum culpa in sunt quis sint veniam. Dolore
+              ex aute deserunt esse ipsum elit aliqua. Aute quis minim velit
+              nostrud pariatur culpa magna in aute.
+              </span>
+          </details>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ End -->
+
+  <!-- Footer start -->
+  <footer class="container px-[70px] mt-28 pb-12 mx-auto flex justify-between ">
+    <div>
+      <p class="mt-4 text-sm">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+      <p class="mt-4 text-sm">binarcarrental@gmail.com</p>
+      <p class="mt-4 text-sm">081-233-334-808</p>
+    </div>
+    <div>
+      <p class="mt-4 text-sm font-semibold">Our services</p>
+      <p class="mt-4 text-sm font-semibold">Why Us</p>
+      <p class="mt-4 text-sm font-semibold">Testimonial</p>
+      <p class="mt-4 text-sm font-semibold">FAQ</p>
+    </div>
+    <div>
+      <p class="mt-4 text-sm">Connect with us</p>
+      <div class="flex justify-between w-[200px] mt-4">
+        <img src="./img/icon_facebook.png" alt="">
+        <img src="./img/icon_instagram.png" alt="">
+        <img src="./img/icon_twitter.png" alt="">
+        <img src="./img/icon_mail.png" alt="">
+        <img src="./img/icon_twitch.png" alt="">
+      </div>
+    </div>
+    <div>
+      <p class="mt-4 text-sm">Copyright Binar 2022</p>
+      <div class="bg-[#0D28A6] w-[100px] h-[34px] mt-8"> </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
